@@ -1,0 +1,138 @@
+body{
+  background-color: #23292f;
+}
+
+.gird-movies{
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.movies{
+  padding: 10px;
+  grid-gap: 1rem;
+  grid-template-columns: minmax(auto, 976px);
+  display: grid;
+  justify-content: center;
+}
+
+.gird-movies h3{
+    color: rgb(214, 214, 214);
+    padding: 5px;
+}
+
+.movie {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+
+}
+
+.movie .card-body{
+  position: absolute;
+  bottom: 0px ;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(to top, #000000, #43434300); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #000000, #43434300);
+  border: none;
+}
+
+.movie .card-body p{
+  font-weight: bold;
+  color: rgb(3, 212, 83);
+}
+.movie .card-body a{
+  border-radius: 100%;
+  transition: all 0.3s ease-in;
+  width: 45px;
+  height: 45px;
+  border-width: 3px;
+  border-color: rgb(255, 243, 227);
+  background-color: transparent;
+}
+.movie .card-body a:focus{
+  box-shadow: none;
+  width: 45px;
+  height: 45px;
+  border-color: rgb(255, 243, 227);
+  background-color: transparent;
+}
+.movie .card-body a:hover{
+  transition: all 0.3s ease-in;
+  width: 55px;
+  height: 55px;
+  font-size: 23px;
+  border-color: rgb(255, 243, 227);
+  background-color: transparent
+}
+
+.movie .card{
+  border: none;
+  box-shadow: 14px 10px 12px rgb(36, 35, 35);
+}
+.movie .card img{
+  height: 200px;
+}
+
+
+
+
+.detail-movie{
+  display: flex;
+  
+}
+
+.detail-movie .detail-img{
+  animation-name: fade;
+  animation-duration: 2.5s, 5s;
+}
+.detail-movie .detail-info{
+  float: left;
+  background-color: #f0f0f050;
+  color: #f0f0f0;
+  padding: 10px;
+  margin-left: 10px;
+  width: 600px;
+  height: 100%;
+  animation-name: fade;
+  animation-duration: 2.5s, 3s;
+}
+
+.detail-movie .detail-info h2{
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.detail-movie .detail-info p{
+  color: #d6d6d6;
+}
+
+.detail-movie .detail-info #qualification{
+  color:rgb(3, 212, 83);
+  font-weight: bold;
+}
+
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+footer{
+    background-color: #343a40;
+    color: rgb(179, 179, 179);
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    bottom: 0px;
+    padding: 20px;
+}
