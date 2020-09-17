@@ -30,7 +30,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-              { from: './src/style/styles.css', to: '' },
+              { from: './src/style/styles.css', to: '/' },
             ],
           }),
     
